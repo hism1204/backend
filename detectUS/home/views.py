@@ -212,26 +212,6 @@ def show_building_list(request,user_id):
 
 #s3에서 이미지 받아서 db에 저장
 
-'''import boto3
-
-def upload_image(request):
-
-    AWS_ACCESS_KEY_ID = "AKIAQ3PMZ5SFGNJQBEQF"
-    AWS_SECRET_ACCESS_KEY = "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"
-    AWS_DEFAULT_REGION = "ap-northeast-2"  
-    AWS_BUCKET_NAME = "detectus"
-
-    s3 = boto3.client('s3',
-                      aws_access_key_id=AWS_ACCESS_KEY_ID,
-                      aws_secret_access_key=AWS_SECRET_ACCESS_KEY,
-                      region_name=AWS_DEFAULT_REGION
-                      )
-
-    #s3.download_file(AWS_BUCKET_NAME, 'OBJECT_NAME', 'FILE_NAME')
-    image_url = 'https://detectus.s3.ap-northeast-2.amazonaws.com/2022-07-29-12-05-00.jpg'
-    Raw_data.objects.create(picture = image_url)
-    print('aaaaaaaa')
-    return HttpResponse(status=200)'''
 
 #user가 선택한 building,glass 등록
 from django.views.decorators.csrf import csrf_exempt
